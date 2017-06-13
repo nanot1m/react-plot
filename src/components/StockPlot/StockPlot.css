@@ -1,0 +1,60 @@
+:local .root {
+  position: relative;
+  display: inline-block;
+  font-family: 'Helvetica', 'Arial';
+  font-size: 14px;
+  background: #fafafa;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+:local .popup {
+  width: 100px;
+}
+
+:local .popupDate {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+:local .popupDelta {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+
+:local .popupPositive {
+  color: #2e7d32;
+}
+
+:local .popupPositive::before {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid #2e7d32;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+:local .popupNegative {
+  color: #d50000;
+}
+
+:local .popupNegative::before {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border: 5px solid #d50000;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}

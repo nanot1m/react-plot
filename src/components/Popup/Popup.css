@@ -1,0 +1,9 @@
+:local .root {
+  position: fixed;
+  display: inline-block;
+  padding: 6px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s linear;
+}
