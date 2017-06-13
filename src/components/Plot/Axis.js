@@ -111,7 +111,7 @@ class Axis extends React.Component {
     const ticks = []
     let pos = 0
     while (pos < max - min) {
-      let y = height - padding.bottom - pos * scale.y
+      let y = height - padding.bottom - (pos - min) * scale.y
       ticks.push(
         <g key={pos}>
           <text
